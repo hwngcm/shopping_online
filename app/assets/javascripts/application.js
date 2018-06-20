@@ -13,3 +13,16 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+//= require bootstrap.min
+//= require counterup.min
+//= require creditly
+//= require easing
+//= require easyResponsiveTabs
+//= require jquery.flexslider
+//= require jquery.wmuSlider
+//= require jquery-1.11.1.min
+//= require minicart
+//= require move-top
+//= require okzoom
+//= require waypoints.min
+//= require jquery
