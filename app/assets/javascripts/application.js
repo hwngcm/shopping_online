@@ -10,6 +10,7 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jquery
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
@@ -20,9 +21,7 @@
 //= require easyResponsiveTabs
 //= require jquery.flexslider
 //= require jquery.wmuSlider
-//= require jquery-1.11.1.min
 //= require minicart
 //= require move-top
 //= require okzoom
 //= require waypoints.min
-//= require jquery
