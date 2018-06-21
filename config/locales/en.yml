@@ -47,3 +47,9 @@ en:
   signup_success: "Sign up successfully" 
   no_user: "Cant find any user"
   sign-up: "Sign Up"
+  log-in: "Log in"
+  login_unsuccess: "Login unsuccessfully"
+  remember_me: Remember me on this computer
+  store: "Store"
+  profile: "Profile"
+  logout: "Log out"
