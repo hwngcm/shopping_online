@@ -7,4 +7,10 @@ class Product < ApplicationRecord
   validates :name, presence: true
   validates :price, presence: true
   validates :image, presence: true
+
+  class << self
+    def top_product
+      Product.last(4)
+    end
+  end
 end

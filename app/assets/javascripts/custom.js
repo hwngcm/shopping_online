@@ -10,3 +10,7 @@ $(document).ready(function(){
     }
   );
 });
+
+$(document).on('turbolinks:load', function() {
+  $('.flexslider').flexslider();
+});
