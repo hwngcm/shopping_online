@@ -8,9 +8,12 @@ class Product < ApplicationRecord
   validates :price, presence: true
   validates :image, presence: true
 
+  scope :select_attr, -> {select :id, :type_id, :name, :price, :description, :image}
+  scope :order_desc, -> {order created_at: :desc}
+
   class << self
     def top_product
-      Product.last(4)
+      Product.last(Settings.product.top_product)
     end
   end
 end

@@ -1,0 +1,28 @@
+<%= provide :title, t("product") %>
+<!-- products-breadcrumb -->
+<div class="products-breadcrumb">
+  <div class="container">
+    <ul>
+      <li><i class="fa fa-home" aria-hidden="true"></i>
+        <%= t("home") %><span>|</span></li>
+      <li><%= t("product") %></li>
+    </ul>
+  </div>
+</div>
+<!-- //products-breadcrumb -->
+<!-- banner -->
+<div class="banner">
+  <%= render "layouts/nav_left" %>
+  <div class="w3l_banner_nav_right">
+    <div class="w3ls_w3l_banner_nav_right_grid w3ls_w3l_banner_nav_right_grid_veg">
+      <h3 class="w3l_fruit"><%= t("product") %></h3>
+      <div class="w3ls_w3l_banner_nav_right_grid1 w3ls_w3l_banner_nav_right_grid1_veg">
+        <%= render partial: "product", collection: @products %>
+        <div class="clearfix"> </div>
+        <%= will_paginate @products %>
+      </div>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+</div>
+<!-- //banner -->
