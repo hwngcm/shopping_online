@@ -52,6 +52,9 @@ GEM
     bindex (0.5.0)
     brakeman (4.3.1)
     builder (3.2.3)
+    bullet (5.7.5)
+      activesupport (>= 3.0.0)
+      uniform_notifier (~> 1.11.0)
     bundler-audit (0.6.0)
       bundler (~> 1.2)
       thor (~> 0.18)
@@ -123,7 +126,10 @@ GEM
     execjs (2.7.0)
     factory_bot (4.10.0)
       activesupport (>= 3.0.0)
+    faker (1.8.7)
+      i18n (>= 0.7)
     ffi (1.9.25)
+    flex-slider-rails (2.7.0)
     font-awesome-rails (4.7.0.4)
       railties (>= 3.2, < 6.0)
     formatador (0.2.5)
@@ -313,6 +319,7 @@ GEM
     uglifier (4.1.11)
       execjs (>= 0.3.0, < 3)
     unicode-display_width (1.4.0)
+    uniform_notifier (1.11.0)
     virtus (1.0.5)
       axiom-types (~> 0.1)
       coercible (~> 1.0)
@@ -336,6 +343,7 @@ DEPENDENCIES
   autoprefixer-rails
   bcrypt (= 3.1.11)
   brakeman
+  bullet
   bundler-audit
   byebug
   capybara (~> 2.13)
@@ -343,6 +351,8 @@ DEPENDENCIES
   config
   database_cleaner
   factory_bot
+  faker
+  flex-slider-rails
   font-awesome-rails
   guard-rspec
   jbuilder (~> 2.5)

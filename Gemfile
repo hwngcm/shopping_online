@@ -9,6 +9,8 @@ gem "bcrypt", "3.1.11"
 gem "config"
 gem "coffee-rails", "~> 4.2"
 gem "font-awesome-rails"
+gem "flex-slider-rails"
+gem "faker"
 gem "jbuilder", "~> 2.5"
 gem "jquery-rails"
 gem "turbolinks", "~> 5"
@@ -30,6 +32,7 @@ group :development do
   gem "listen", ">= 3.0.5", "< 3.2"
   gem "spring"
   gem "spring-watcher-listen", "~> 2.0.0"
+  gem "bullet"
 end
 
 group :framgia do
