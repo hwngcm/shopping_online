@@ -1,10 +1,12 @@
-<%= provide :title, t("sign-up") %>
+<%= provide :title, t("log-in") %>
 <!-- products-breadcrumb -->
   <div class="products-breadcrumb">
     <div class="container">
       <ul>
-        <li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Home</a><span>|</span></li>
-        <li><%= t "sign-up" %></li>
+        <li><i class="fa fa-home" aria-hidden="true"></i>
+          <a><%=link_to t("home"), root_path %></a><span>|</span>
+        </li>
+        <li><%= t("log-in") %></li>
       </ul>
     </div>
   </div>
@@ -15,17 +17,13 @@
     <div class="w3l_banner_nav_right">
       <!-- login -->
       <div class="w3_login">
-        <h3><%= t("sign-up") %></h3>
+        <h3><%= t("log-in") %></h3>
         <div class="w3_login_module">
           <div class="module form-module">
             <div class="toggle"><i class="fa fa-times fa-pencil"></i></div>
             <div class="form">
-            <h2><%= t("sign-up") %></h2>
-              <%= form_for @user, url: signup_path do |f| %>
-                <%= render "shared/error_messages", object: f.object %>
-
-                <%= f.label :name, t("name") %>
-                <%= f.text_field :name %>
+            <h2><%= t("log-in") %></h2>
+              <%= form_for :session, url: login_path do |f| %>
 
                 <%= f.label :email, t("email") %>
                 <%= f.text_field :email %>
@@ -33,10 +31,11 @@
                 <%= f.label :password, t("password") %>
                 <%= f.password_field :password %>
 
-                <%= f.label :password_confirmation, t("password_confirmation") %>
-                <%= f.password_field :password_confirmation %>
-
-                <%= f.submit t("create_account") %>
+                <%= f.label :remember_me, class: "checkbox inline" do %>
+                  <%= f.check_box :remember_me %>
+                  <span> <%= t("remember_me") %> </span>
+                <% end %>
+                <%= f.submit t("log-in") %>
               <% end %>
             </div>
             <div class="cta"><a href="#"><%= t("forget") %></a></div>
