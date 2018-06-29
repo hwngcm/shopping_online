@@ -66,3 +66,8 @@ en:
   get: "Get off"
   hot: "Hot Offers"
   shop_now: "Shop now"
+  foodle: "Foodle Store"
+  categories: "Category"
+  no_product: "Can't find product"
+  product: "Products"
+  detail: "Product Detail"
