@@ -15,5 +15,9 @@ class Product < ApplicationRecord
     def top_product
       Product.last(Settings.product.top_product)
     end
+
+    def search search
+      where("name LIKE ?", "%#{search}%")
+    end
   end
 end

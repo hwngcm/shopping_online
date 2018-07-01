@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  get 'product_pages/product'
-
   get "/contact", to: "static_pages#contact"
   get "/about", to: "static_pages#about"
   get "/show", to: "users#show"
@@ -13,4 +11,5 @@ Rails.application.routes.draw do
   resources :users
   resources :categories, only: [:index, :show]
   resources :products, only: [:index, :show]
+  resources :searchs, only: :index
 end
