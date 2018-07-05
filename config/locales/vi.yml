@@ -42,3 +42,6 @@ vi:
   detail: "Chi tiết sản phẩm"
   search: "Tìm kiếm"
   find: "Tìm thấy"
+  invalid: "Invalid"
+  no_product: 'Không tìm thấy sản phẩm'
+  not_exist: "Không tồn tại"

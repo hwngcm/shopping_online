@@ -1,4 +1,6 @@
 module SessionsHelper
+  attr_reader :cart
+
   def log_in user
     session[:user_id] = user.id
   end
@@ -24,6 +26,15 @@ module SessionsHelper
         log_in user
         @current_user = user
       end
+    end
+  end
+
+  def current_cart
+    if session[:cart_id].present?
+      @cart = Cart.find_by id: session[:cart_id]
+    else
+      @cart = Cart.create
+      session[:cart_id] = cart.id
     end
   end
 

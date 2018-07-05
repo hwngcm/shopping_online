@@ -73,3 +73,6 @@ en:
   detail: "Product Detail"
   search: "Search"
   find: "There is/are"
+  invalid: "Invalid"
+  no_product: "Cant find product"
+  not_exist: "Not Exist"
